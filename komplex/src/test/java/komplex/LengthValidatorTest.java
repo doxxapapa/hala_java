@@ -14,7 +14,7 @@ public class LengthValidatorTest {
 		//mock
 		User u = mock(User.class);
 		//when
-		when(u.getName()).thenReturn("doxxapapa");
+		when(u.getName()).thenReturn("doxxapap");
 		//assert
 		Assert.assertTrue(lv.isValid(u));
 
