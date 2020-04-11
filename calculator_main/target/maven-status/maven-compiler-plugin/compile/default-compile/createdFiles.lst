@@ -1,0 +1,4 @@
+calc\train\service\CalculateSimple.class
+calc\train\controller\MainController.class
+calc\train\Application.class
+calc\train\model\Calculator.class
