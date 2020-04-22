@@ -1,0 +1,29 @@
+<html>
+<body>
+
+<h2>HTML Forms</h2>
+
+<form action="#" th:action="@{/calculator}" th:object="${cI}" method="POST">
+
+    <h3>1. szám</h3>
+    <p>
+        <input class="in" type="text" th:field="*{leftOperand}"/>
+    </p>
+    <h3>2. szám</h3>
+    <p>
+        <input class="in" type="text" th:field="*{rightOperand}"/>
+    </p>
+
+    <h3>Műveletek</h3>
+    <p>
+        <input type="submit" class="button" name="add" value="+"/>
+        <input type="submit" class="button" name="subtract" value="-"/>
+        <input type="submit" class="button" name="multiply" value="*"/>
+        <input type="submit" class="button" name="divide" value="/"/>
+    </p>
+    <h3>Eredmény:</h3>
+    <h1><p th:text="${result}"/></h1>
+</form>
+
+</body>
+</html>
